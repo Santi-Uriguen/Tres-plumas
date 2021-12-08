@@ -32,11 +32,11 @@ function Card(props) {
     return ImgSrc;
   };
   return (
-    <div className={"indexCard" + " " + props.class}>
+    <div className={"indexCard " + props.class}>
       <a href={"#" + props.class}>
         <img
           src={imgSelection()}
-          alt="background image"
+          alt="background img"
           className={props.class + "Image"}
         />
         {props.section !== "GOLDEN AGE" ? <h2>{props.section}</h2> : ""}
