@@ -1,6 +1,6 @@
 import React from "react";
 import Indice from "./components/Indice";
-import ProductSection from "./components/ProductSection";
+import ProductSection from "./components/ProductSection/ProductSection.jsx";
 
 const Main = () => {
   return (
