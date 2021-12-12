@@ -28,14 +28,13 @@
       align-items: center;
       margin: 0;
       padding: 0;
-      position: fixed;
-      top: 0;
       z-index: 10;
+      height: 10vh;
       .navbar-brand {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin: 2% 0;
+        margin: 0 auto;
         .navLogo {
           width: 20%;
         }
@@ -51,6 +50,10 @@
         }
       }
     }
+    .fixed {
+      position: fixed;
+      top: 0;
+    }
   }
   main {
     background-color: black;
@@ -58,26 +61,45 @@
       display: grid;
       grid-template-columns: repeat(2, 50%);
       background-color: black;
+      height: 90vh;
+      margin-top: 10vh;
+      width: 100%;
+      row-gap: 0;
+      justify-content: center;
+      align-items: center;
       .indexCard {
         width: 100%;
         background-color: black;
+        margin: 0;
+        display: flex;
+        height: 100%;
         a {
+          position: relative;
           text-decoration: none;
           color: white;
           display: flex;
           flex-direction: column;
           align-items: center;
           background-color: black;
+          height: 100%;
+          overflow: hidden;
         }
         h2 {
-          background: none;
+          width: 100%;
+          height: 100%;
           position: absolute;
-          margin: 18%;
-          width: fit-content;
+          left: 0px;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          display: flex;
+          background: none;
+          z-index: 1;
         }
         img {
-          width: 100%;
           background-color: black;
+          overflow: hidden;
+          height: 100%;
         }
       }
       .goldenAge {
@@ -85,10 +107,11 @@
       }
       .petacas {
         grid-column: 1 / 3;
-        h2 {
-          margin: 12%;
-        }
       }
+    }
+    .productSeciton {
+      height: 90vh;
+      margin-top: 10vh;
     }
   }
 }

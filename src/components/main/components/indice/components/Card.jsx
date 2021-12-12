@@ -1,10 +1,10 @@
 import React from "react";
-import secos from "../../../../assets/Secos.svg";
-import frutales from "../../../../assets/Frutales.svg";
-import cremosos from "../../../../assets/Cremosos.svg";
-import cafe from "../../../../assets/AlCafe.svg";
-import golden from "../../../../assets/goldenAge.svg";
-import petacas from "../../../../assets/petacas.svg";
+import secos from "../../../../../assets/Secos.svg";
+import frutales from "../../../../../assets/Frutales.svg";
+import cremosos from "../../../../../assets/Cremosos.svg";
+import cafe from "../../../../../assets/AlCafe.svg";
+import golden from "../../../../../assets/goldenAge.svg";
+import petacas from "../../../../../assets/petacas.svg";
 
 function Card(props) {
   const imgSelection = () => {

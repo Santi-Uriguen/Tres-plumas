@@ -1,5 +1,5 @@
 import React from "react";
-import Indice from "./components/Indice";
+import Indice from "./components/indice/Indice";
 import ProductSection from "./components/ProductSection/ProductSection.jsx";
 
 const Main = () => {

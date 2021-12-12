@@ -42,9 +42,8 @@
           align-items: center;
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
   z-index: 10;
+  height: 10vh;
 }
 
 .App header .navbar .navbar-brand {
@@ -55,7 +54,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 2% 0;
+  margin: 0 auto;
 }
 
 .App header .navbar .navbar-brand .navLogo {
@@ -69,6 +68,11 @@
   right: 5%;
 }
 
+.App header .fixed {
+  position: fixed;
+  top: 0;
+}
+
 .App main {
   background-color: black;
 }
@@ -79,14 +83,30 @@
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
   background-color: black;
+  height: 90vh;
+  margin-top: 10vh;
+  width: 100%;
+  row-gap: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .App main .indice .indexCard {
   width: 100%;
   background-color: black;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 
 .App main .indice .indexCard a {
+  position: relative;
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -100,20 +120,36 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
+  height: 100%;
+  overflow: hidden;
 }
 
 .App main .indice .indexCard h2 {
-  background: none;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  margin: 18%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  z-index: 1;
 }
 
 .App main .indice .indexCard img {
-  width: 100%;
   background-color: black;
+  overflow: hidden;
+  height: 100%;
 }
 
 .App main .indice .goldenAge {
@@ -128,7 +164,8 @@
   grid-column: 1 / 3;
 }
 
-.App main .indice .petacas h2 {
-  margin: 12%;
+.App main .productSeciton {
+  height: 90vh;
+  margin-top: 10vh;
 }
 /*# sourceMappingURL=app.css.map */
