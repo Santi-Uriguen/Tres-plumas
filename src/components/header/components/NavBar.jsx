@@ -3,7 +3,7 @@ import logo2 from "../../../assets/logo2.png";
 
 function NavBar(props) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" id="navBar">
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo2} alt="logo" className="navLogo" />

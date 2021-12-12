@@ -4,16 +4,16 @@ import ProdCard from "./components/ProdCard";
 
 const ProductSection = (props) => {
   const [number, newNumber] = useState(1);
-  function handleClick(p) {
-    console.log("clicked");
-    // if (number === 1) {
-    //   p === "rest" ? newNumber(number - 1) : newNumber(number + 1);
-    // }
-    // console.log(number);
-  }
-  function sayHello() {
-    alert("Hello!");
-  }
+  const handleClick = (p) => {
+    if (number > 1) {
+      p === "rest" ? newNumber(number - 1, {}) : newNumber(number + 1, {});
+    } else {
+      p === "rest" ? newNumber(1) : newNumber(number + 1);
+    }
+  };
+  const handleSubmit = () => {
+    newNumber(1);
+  };
   return (
     <section className="productSeciton" id={props.prod}>
       <div>
@@ -26,12 +26,14 @@ const ProductSection = (props) => {
           img="imgSrc"
         />
         <div className="Quantity">
-          <button onClick={handleClick("rest")}>-</button>
+          <button onClick={() => handleClick("rest")} id="restButton">
+            -
+          </button>
           <h4>{number}</h4>
-          <button onClick={handleClick("add")}>+</button>
+          <button onClick={() => handleClick("add")}>+</button>
         </div>
         <div>{"$" + "1800"}</div>
-        <button>Agregar a la orden</button>
+        <button onClick={handleSubmit}>Agregar a la orden</button>
       </div>
     </section>
   );
