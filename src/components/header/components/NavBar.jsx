@@ -14,11 +14,19 @@ function NavBar(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Secos</Nav.Link>
-            <Nav.Link href="#link">Frutales</Nav.Link>
-            <Nav.Link href="#link">Cremosos</Nav.Link>
-            <Nav.Link href="#link">Al Café</Nav.Link>
+            <Nav.Link href="#link">SECOS</Nav.Link>
+            <span></span>
+            <Nav.Link href="#link">FRUTALES</Nav.Link>
+            <span></span>
+            <Nav.Link href="#link">CREMOSOS</Nav.Link>
+            <span></span>
+            <Nav.Link href="#link">AL CAFÉ</Nav.Link>
+            <span></span>
+            <Nav.Link href="#link">GOLDEN AGE</Nav.Link>
+            <span></span>
+            <Nav.Link href="#link" className="pedido">
+              MI PEDIDO
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

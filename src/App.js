@@ -21,7 +21,7 @@ function App() {
         document.getElementById("navBar").classList.add("fixed");
       } else {
         let scrolled = window.scrollY;
-        if ((scrolled < viewport) & (scrolled >= 0)) {
+        if ((scrolled <= viewport) & (scrolled >= 0)) {
           window.scrollTo(0, 0);
           document.getElementById("navBar").classList.remove("fixed");
         }
