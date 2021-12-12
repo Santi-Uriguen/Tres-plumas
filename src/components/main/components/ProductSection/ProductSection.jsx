@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import ProdCard from "./components/ProdCard";
 
 const ProductSection = (props) => {
+  const [number, newNumber] = useState(1);
+  function handleClick(p) {
+    console.log("clicked");
+    // if (number === 1) {
+    //   p === "rest" ? newNumber(number - 1) : newNumber(number + 1);
+    // }
+    // console.log(number);
+  }
+  function sayHello() {
+    alert("Hello!");
+  }
   return (
     <section className="productSeciton" id={props.prod}>
       <div>
@@ -14,9 +26,9 @@ const ProductSection = (props) => {
           img="imgSrc"
         />
         <div className="Quantity">
-          <div>-</div>
-          <h4>1</h4>
-          <div>+</div>
+          <button onClick={handleClick("rest")}>-</button>
+          <h4>{number}</h4>
+          <button onClick={handleClick("add")}>+</button>
         </div>
         <div>{"$" + "1800"}</div>
         <button>Agregar a la orden</button>
