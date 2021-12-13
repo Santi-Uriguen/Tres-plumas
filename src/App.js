@@ -39,6 +39,20 @@ function App() {
     },
     false
   );*/
+    window.addEventListener("scroll", function () {
+      let navbar = document.getElementById("navBar");
+      let fixed = navbar.offsetTop;
+      if (window.scrollY >= fixed) {
+        console.log("fix:" + fixed);
+        console.log("window:" + window.scrollY);
+        navbar.classList.add("fixed");
+        document.querySelector("main").classList.add("fixed");
+      } else {
+        console.log("whaaat");
+        navbar.classList.remove("fixed");
+        document.querySelector("main").classList.remove("fixed");
+      }
+    });
   }
   return (
     <div className="App" id="App">
