@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 import ProdCard from "./components/ProdCard";
 
 const ProductSection = (props) => {
+  console.log(props);
   const [number, newNumber] = useState(1);
   const handleClick = (p) => {
     if (number > 1) {
@@ -15,16 +15,20 @@ const ProductSection = (props) => {
     newNumber(1);
   };
   return (
-    <section className="productSeciton" id={props.prod}>
+    <section className={"productSeciton"} id={props.name}>
       <div>
-        <h2>{props.prod}</h2>
-        <ProdCard
-          name="CHOCOLATE"
-          serial="C 2306"
-          temp="17°"
-          quant="6x700ml"
-          img="imgSrc"
-        />
+        <h2>{props.name}</h2>
+        {props.productos.map((producto) => (
+          <ProdCard
+            name={producto.name}
+            serial={producto.serial}
+            key={producto.serial}
+            temp={producto.temp}
+            quant={producto.cant}
+            img="imgSrc"
+          />
+        ))}
+
         <div className="Quantity">
           <button onClick={() => handleClick("rest")} id="restButton">
             -

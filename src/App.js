@@ -7,7 +7,8 @@ function App() {
   let viewport = window.innerHeight;
   window.addEventListener(
     "scroll",
-    function () {
+    function (e) {
+      e.preventDefault();
       // or window.addEventListener("scroll"....
       let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
       if (st > lastScrollTop) {
