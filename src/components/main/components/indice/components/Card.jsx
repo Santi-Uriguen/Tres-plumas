@@ -1,32 +1,25 @@
 import React from "react";
-import secos from "../../../../../assets/Secos.svg";
-import frutales from "../../../../../assets/Frutales.svg";
-import cremosos from "../../../../../assets/Cremosos.svg";
-import cafe from "../../../../../assets/AlCafe.svg";
-import golden from "../../../../../assets/goldenAge.svg";
-import petacas from "../../../../../assets/petacas.svg";
+import images from "../../../../../context/images";
 
 function Card(props) {
+  let imagenes = images.banners;
   const imgSelection = () => {
     let ImgSrc;
     switch (props.class) {
-      case "secos":
-        ImgSrc = secos;
-        break;
-      case "frutales":
-        ImgSrc = frutales;
+      case "alCafe":
+        ImgSrc = imagenes[0];
         break;
       case "cremosos":
-        ImgSrc = cremosos;
+        ImgSrc = imagenes[1];
         break;
-      case "alCafe":
-        ImgSrc = cafe;
+      case "secos":
+        ImgSrc = imagenes[2];
         break;
-      case "goldenAge":
-        ImgSrc = golden;
+      case "frutales":
+        ImgSrc = imagenes[3];
         break;
       default:
-        ImgSrc = petacas;
+        ImgSrc = imagenes[4];
         break;
     }
     return ImgSrc;

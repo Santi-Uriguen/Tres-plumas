@@ -1,42 +1,51 @@
 import React, { useState } from "react";
 import ProdCard from "./components/ProdCard";
+import SmallProdCard from "./components/SmallProdCard.jsx";
+import imagenes from "../../../../context/images";
 
 const ProductSection = (props) => {
-  const [number, newNumber] = useState(1);
-  const handleClick = (p) => {
-    if (number > 1) {
-      p === "rest" ? newNumber(number - 1, {}) : newNumber(number + 1, {});
-    } else {
-      p === "rest" ? newNumber(1) : newNumber(number + 1);
+  const [prod, setProd] = useState(props.productos[1]);
+  const imgSelection = () => {
+    let ImgSrc;
+    switch (props.name) {
+      case "cafe":
+        ImgSrc = imagenes.banners[5];
+        break;
+      case "cremosos":
+        ImgSrc = imagenes.banners[6];
+        break;
+      case "secos":
+        ImgSrc = imagenes.banners[7];
+        break;
+      case "frutales":
+        ImgSrc = imagenes.banners[8];
+        break;
+      default:
+        ImgSrc = imagenes.banners[9];
+        break;
     }
-  };
-  const handleSubmit = () => {
-    newNumber(1);
+    return ImgSrc;
   };
   return (
-    <section className={"productSeciton"} id={props.name}>
-      <div>
+    <section className={"productSection"} id={props.name}>
+      <div className="banner">
+        <img src={imgSelection()} alt="" />
         <h2>{props.name.toUpperCase()}</h2>
-        {props.productos.map((producto) => (
-          <ProdCard
-            name={producto.name}
-            serial={producto.serial}
-            key={producto.serial}
-            temp={producto.temp}
-            quant={producto.cant}
-            img="imgSrc"
-          />
-        ))}
-
-        <div className="Quantity">
-          <button onClick={() => handleClick("rest")} id="restButton">
-            -
-          </button>
-          <h4>{number}</h4>
-          <button onClick={() => handleClick("add")}>+</button>
+      </div>
+      <div className="prodContainer">
+        <ProdCard
+          name={prod.name}
+          serial={prod.serial}
+          key={prod.serial}
+          temp={prod.temp}
+          quant={prod.cant}
+          img={prod.src}
+        />
+        <div className="smallProducts">
+          {props.productos.map((producto) => {
+            return <SmallProdCard src={producto.src} key={producto.serial} />;
+          })}
         </div>
-        <div>{"$" + "1800"}</div>
-        <button onClick={handleSubmit}>Agregar a la orden</button>
       </div>
     </section>
   );
