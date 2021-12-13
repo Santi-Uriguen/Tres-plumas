@@ -13,21 +13,21 @@ function App() {
       if (st > lastScrollTop) {
         //acá está en la pagina principal
         let scrolled = window.scrollY;
-        if ((scrolled >= 0) & (scrolled <= 3)) {
+        if ((scrolled >= 0) & (scrolled <= 50)) {
           window.scrollTo(0, viewport);
-        } else if ((scrolled >= viewport + 5) & (scrolled <= viewport + 10)) {
+        } else if ((scrolled >= viewport + 5) & (scrolled <= viewport + 40)) {
           window.scrollTo(0, viewport * 2);
         }
         document.getElementById("navBar").classList.add("fixed");
       } else {
         let scrolled = window.scrollY;
         console.log(scrolled);
-        if ((scrolled <= viewport - 15) & (scrolled >= viewport - 20)) {
+        if ((scrolled <= viewport - 15) & (scrolled >= viewport - 50)) {
           window.scrollTo(0, 0);
           document.getElementById("navBar").classList.remove("fixed");
         } else if (
           (scrolled <= viewport * 2) &
-          (scrolled >= viewport * 2 - 5)
+          (scrolled >= viewport * 2 - 50)
         ) {
           window.scrollTo(0, viewport);
         }
