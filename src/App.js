@@ -41,10 +41,7 @@ function App() {
   );*/
     window.addEventListener("scroll", function () {
       let navbar = document.getElementById("navBar");
-      let fixed = navbar.offsetTop;
-      if (window.scrollY >= fixed) {
-        console.log("fix:" + fixed);
-        console.log("window:" + window.scrollY);
+      if (window.scrollY >= window.innerHeight) {
         navbar.classList.add("fixed");
         document.querySelector("main").classList.add("fixed");
       } else {
