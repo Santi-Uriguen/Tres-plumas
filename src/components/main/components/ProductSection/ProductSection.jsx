@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProdCard from "./components/ProdCard";
 
 const ProductSection = (props) => {
-  console.log(props);
   const [number, newNumber] = useState(1);
   const handleClick = (p) => {
     if (number > 1) {
@@ -17,7 +16,7 @@ const ProductSection = (props) => {
   return (
     <section className={"productSeciton"} id={props.name}>
       <div>
-        <h2>{props.name}</h2>
+        <h2>{props.name.toUpperCase()}</h2>
         {props.productos.map((producto) => (
           <ProdCard
             name={producto.name}

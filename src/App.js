@@ -3,7 +3,9 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 
 function App() {
-  let lastScrollTop = 0;
+  {
+    /*descomentar esto si quiero hacer las transiciones sutiles y fijas
+     let lastScrollTop = 0;
   let viewport = window.innerHeight;
   window.addEventListener(
     "scroll",
@@ -36,7 +38,8 @@ function App() {
       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     },
     false
-  );
+  );*/
+  }
   return (
     <div className="App" id="App">
       <Header />

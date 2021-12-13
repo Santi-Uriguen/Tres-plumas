@@ -7,7 +7,8 @@ const Main = () => {
   return (
     <main>
       <Indice />
-      <ProductSection productos={products.frutales} name="Frutales" />
+      <ProductSection productos={products.frutales} name="frutales" />
+      <ProductSection productos={products.cremosos} name="cremosos" />
     </main>
   );
 };
