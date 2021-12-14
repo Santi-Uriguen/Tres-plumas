@@ -21,18 +21,14 @@
 }
 
 .App header .homePage .logoHome {
-  width: 25%;
-}
-
-.App header .homePage h1 {
-  color: #f6dfa4;
-  font-size: 35px;
+  width: 75%;
+  margin-bottom: 10%;
 }
 
 .App header .homePage h2 {
   color: white;
   font-style: italic;
-  font-size: 30px;
+  font-size: 3em;
   text-align: center;
   font-family: "cymru_sans_bodyitalic";
 }
@@ -343,6 +339,16 @@
 .App main .productSection .prodContainer .bigProd .producto article p {
   margin: 0;
   font-family: "wales_sans_bodyregular";
+}
+
+.App main .productSection .prodContainer .bigProd .producto article .cant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App main .productSection .prodContainer .bigProd .producto article .cant img {
+  width: 20%;
 }
 
 .App main .productSection .prodContainer .bigProd .producto img {

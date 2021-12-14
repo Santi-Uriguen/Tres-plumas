@@ -1,4 +1,5 @@
 import React from "react";
+import caja from "../../../../../assets/caja.png";
 
 function ProdCard(props) {
   return (
@@ -8,7 +9,12 @@ function ProdCard(props) {
         <article>
           <h4>{props.name}</h4>
           <p>{props.serial + " / " + props.temp}</p>
-          <p>{props.quant}</p>
+          <div className="cant">
+            <p>
+              <img src={caja} alt="" />
+              {props.quant}
+            </p>
+          </div>
         </article>
       </div>
     </div>

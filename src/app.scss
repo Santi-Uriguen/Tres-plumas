@@ -11,16 +11,13 @@
       align-items: center;
       background-color: #9c182f;
       .logoHome {
-        width: 25%;
-      }
-      h1 {
-        color: #f6dfa4;
-        font-size: 35px;
+        width: 75%;
+        margin-bottom: 10%;
       }
       h2 {
         color: white;
         font-style: italic;
-        font-size: 30px;
+        font-size: 3em;
         text-align: center;
         font-family: "cymru_sans_bodyitalic";
       }
@@ -215,6 +212,12 @@
               p {
                 margin: 0;
                 font-family: "wales_sans_bodyregular";
+              }
+              .cant {
+                display: flex;
+                img {
+                  width: 20%;
+                }
               }
             }
             img {
