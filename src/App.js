@@ -21,7 +21,6 @@ function App() {
   const [page, setPage] = useState("main");
   const changePage = (to) => {
     if (to === "store") {
-      console.log("entramo");
       setPage("store");
     } else {
       setPage("main");

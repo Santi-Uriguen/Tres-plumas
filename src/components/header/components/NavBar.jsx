@@ -11,7 +11,6 @@ function NavBar(props) {
     props.changePage("store");
   };
   useEffect(() => {
-    console.log(window.localStorage);
     window.localStorage.getItem("pedido") !== null && setstate(false);
   }, []);
   const goHome = () => {
@@ -33,23 +32,53 @@ function NavBar(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#secos" onClick={closeMenu}>
+            <Nav.Link
+              href="#secos"
+              onClick={() => {
+                closeMenu();
+                goHome();
+              }}
+            >
               SECOS
             </Nav.Link>
             <span></span>
-            <Nav.Link href="#frutales" onClick={closeMenu}>
+            <Nav.Link
+              href="#frutales"
+              onClick={() => {
+                closeMenu();
+                goHome();
+              }}
+            >
               FRUTALES
             </Nav.Link>
             <span></span>
-            <Nav.Link href="#cremosos" onClick={closeMenu}>
+            <Nav.Link
+              href="#cremosos"
+              onClick={() => {
+                closeMenu();
+                goHome();
+              }}
+            >
               CREMOSOS
             </Nav.Link>
             <span></span>
-            <Nav.Link href="#al café" onClick={closeMenu}>
+            <Nav.Link
+              href="#al café"
+              onClick={() => {
+                closeMenu();
+                goHome();
+              }}
+            >
               AL CAFÉ
             </Nav.Link>
             <span></span>
-            <Nav.Link href="#golden age" onClick={closeMenu}>
+            <Nav.Link
+              href="#golden age"
+              onClick={() => {
+                closeMenu();
+                goHome();
+              }}
+            >
               GOLDEN AGE
             </Nav.Link>
             <span></span>

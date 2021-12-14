@@ -475,6 +475,13 @@
   font-size: 0.85em;
   height: 70%;
   font-family: "wales_sans_bodyregular";
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.App main .productSection .sendButtons .clicked {
+  background-color: #990033;
 }
 
 .App main .productSection:last-of-type .prodContainer .bigProd .producto img {

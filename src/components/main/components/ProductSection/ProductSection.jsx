@@ -51,13 +51,18 @@ const ProductSection = (props) => {
     } else {
       window.localStorage.setItem("pedido", pedidoArr);
     }
-    console.log(localStorage);
     newNumber(1);
   };
   const handleChangePage = () => {
     newNumber(1);
     props.changePage("store");
   };
+  function changeColor(e) {
+    e.target.className = "clicked";
+    setTimeout(() => {
+      e.target.classList.remove("clicked");
+    }, 250);
+  }
   return (
     <section className={"productSection"} id={props.name}>
       <div className="banner">
@@ -104,7 +109,14 @@ const ProductSection = (props) => {
         )}
       </div>
       <div className="sendButtons">
-        <button onClick={handleSubmit}>Agregar al pedido</button>
+        <button
+          onClick={(e) => {
+            handleSubmit();
+            changeColor(e);
+          }}
+        >
+          Agregar al pedido
+        </button>
         <button onClick={handleChangePage}>Ver mi pedido</button>
       </div>
     </section>
