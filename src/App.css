@@ -468,4 +468,251 @@
 .App .fixed {
   padding-top: 10vh;
 }
+
+.App .storeContainer .pedidoUno {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .storeContainer .pedidoUno h2 {
+  margin: 5vh 0 4vh 0;
+}
+
+.App .storeContainer .pedidoUno .pedido {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado h4 {
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado .prd {
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado .dtl {
+  width: 50%;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado .cnt {
+  width: 20%;
+}
+
+.App .storeContainer .pedidoUno .pedido .encabezado .prz {
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer {
+  width: 100%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard h2 {
+  margin: 0;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard img {
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard .dtl {
+  width: 50%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard .cnt {
+  width: 20%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .prodCard .prz {
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno .pedido .products .prodContainer .line {
+  width: 100%;
+  background-color: rgba(153, 0, 51, 0.3);
+  margin: 2% 0;
+  height: 1px;
+}
+
+.App .storeContainer .pedidoUno .pedido .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .storeContainer .pedidoUno .pedido .total h3 {
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+.App .storeContainer .pedidoUno .pedido .total .ttl {
+  margin-left: 50%;
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno .pedido .total .qtt {
+  width: 20%;
+}
+
+.App .storeContainer .pedidoUno .pedido .total .ptt {
+  width: 15%;
+}
+
+.App .storeContainer .pedidoUno button {
+  background-color: #990033;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5vh;
+  color: white;
+  padding: 2%;
+}
+
+.App .storeContainer .pedidoDos {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .storeContainer .pedidoDos h2 {
+  margin: 5vh 0 5vh 0;
+}
+
+.App .storeContainer .pedidoDos form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 75%;
+}
+
+.App .storeContainer .pedidoDos form input {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #b1b1b1;
+  margin: 2% 0;
+  height: 5vh;
+}
+
+.App .storeContainer .pedidoDos button {
+  background-color: #990033;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5vh;
+  color: white;
+  padding: 2%;
+}
+
+.App .storeContainer .pedidoTres {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .storeContainer .pedidoTres img {
+  width: 25%;
+  margin: 10vh 0 5vh 0;
+}
+
+.App .storeContainer .pedidoTres h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.App .storeContainer .pedidoTres h4 {
+  width: 65%;
+  font-size: 0.9em;
+  text-align: center;
+}
 /*# sourceMappingURL=app.css.map */

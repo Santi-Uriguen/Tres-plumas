@@ -45,7 +45,7 @@ const products = {
     },
     {
       name: "Kiwi",
-      serial: "C, 2338",
+      serial: "C. 2338",
       temp: "22°",
       cant: "6X700ML",
       src: images.botellas.frutales[6],
@@ -73,7 +73,7 @@ const products = {
     },
     {
       name: "Cacao",
-      serial: "C: 2309",
+      serial: "C. 2309",
       temp: "24°",
       cant: "6X700ML",
       src: images.botellas.frutales[10],
@@ -152,7 +152,7 @@ const products = {
     },
     {
       name: "Chocolate Blanco",
-      serial: "C, 2324",
+      serial: "C. 2324",
       temp: "17°",
       cant: "6X700ML",
       src: images.botellas.cremosos[7],
@@ -180,7 +180,7 @@ const products = {
     },
     {
       name: "Huevo",
-      serial: "C: 2305",
+      serial: "C. 2305",
       temp: "18°",
       cant: "6X700ML",
       src: images.botellas.cremosos[11],

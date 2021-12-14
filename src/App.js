@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
+import Store from "./components/store/Store";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -13,11 +15,23 @@ function App() {
       document.querySelector("main").classList.remove("fixed");
     }
   });
-
+  const [page, setPage] = useState("main");
+  const changePage = (to) => {
+    if (to === "store") {
+      console.log("entramo");
+      setPage("store");
+    } else {
+      setPage("main");
+    }
+  };
   return (
     <div className="App" id="App">
-      <Header />
-      <Main />
+      <Header changePage={changePage} />
+      {page === "main" ? (
+        <Main changePage={changePage} />
+      ) : (
+        <Store changePage={changePage} />
+      )}
     </div>
   );
 }

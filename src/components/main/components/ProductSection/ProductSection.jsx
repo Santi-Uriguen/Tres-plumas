@@ -40,7 +40,23 @@ const ProductSection = (props) => {
     }
   };
   const handleSubmit = () => {
+    let producto = prod.serial + "/";
+    let pedidoStr = producto.repeat(number);
+    let pedidoArr = pedidoStr.split("/", number);
+    let pedidoViejo = window.localStorage.getItem("pedido");
+    if (pedidoViejo != null) {
+      pedidoViejo = pedidoViejo.split(",");
+      let newPedido = pedidoViejo.concat(pedidoArr);
+      window.localStorage.setItem("pedido", newPedido);
+    } else {
+      window.localStorage.setItem("pedido", pedidoArr);
+    }
+    console.log(localStorage);
     newNumber(1);
+  };
+  const handleChangePage = () => {
+    newNumber(1);
+    props.changePage("store");
   };
   return (
     <section className={"productSection"} id={props.name}>
@@ -89,7 +105,7 @@ const ProductSection = (props) => {
       </div>
       <div className="sendButtons">
         <button onClick={handleSubmit}>Agregar al pedido</button>
-        <button onClick={handleSubmit}>Ver mi pedido</button>
+        <button onClick={handleChangePage}>Ver mi pedido</button>
       </div>
     </section>
   );

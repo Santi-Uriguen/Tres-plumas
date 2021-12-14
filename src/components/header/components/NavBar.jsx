@@ -1,30 +1,45 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo2 from "../../../assets/logo2.png";
+import { useEffect, useState } from "react";
 
 function NavBar(props) {
+  const [state, setstate] = useState(true);
   const handleClick = () => {
     window.scroll({ top: 0, left: 0, behaviour: "instant" });
   };
+  const changePage = () => {
+    props.changePage("store");
+  };
+  useEffect(() => {
+    console.log(window.localStorage);
+    window.localStorage.getItem("pedido") !== null && setstate(false);
+  }, []);
+  const goHome = () => {};
   return (
     <Navbar bg="light" expand="lg" id="navBar">
       <Container>
         <Navbar.Brand onClick={handleClick}>
-          <img src={logo2} alt="logo" className="navLogo" />
+          <img src={logo2} alt="logo" className="navLogo" onClick={goHome} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#link">SECOS</Nav.Link>
+            <Nav.Link href="#secos">SECOS</Nav.Link>
             <span></span>
-            <Nav.Link href="#link">FRUTALES</Nav.Link>
+            <Nav.Link href="#frutales">FRUTALES</Nav.Link>
             <span></span>
-            <Nav.Link href="#link">CREMOSOS</Nav.Link>
+            <Nav.Link href="#cremosos">CREMOSOS</Nav.Link>
             <span></span>
-            <Nav.Link href="#link">AL CAFÉ</Nav.Link>
+            <Nav.Link href="#cafe">AL CAFÉ</Nav.Link>
             <span></span>
-            <Nav.Link href="#link">GOLDEN AGE</Nav.Link>
+            <Nav.Link href="#golden">GOLDEN AGE</Nav.Link>
             <span></span>
-            <Nav.Link href="#link" className="pedido">
+            <Nav.Link
+              href="#link"
+              className="pedido"
+              onClick={changePage}
+              disabled={state}
+            >
               MI PEDIDO
             </Nav.Link>
           </Nav>

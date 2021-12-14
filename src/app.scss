@@ -307,4 +307,161 @@
   .fixed {
     padding-top: 10vh;
   }
+  .storeContainer {
+    .pedidoUno {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin: 5vh 0 4vh 0;
+      }
+      .pedido {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .encabezado {
+          display: flex;
+          justify-content: center;
+          width: 80%;
+          h4 {
+            font-size: 0.85em;
+            text-align: center;
+          }
+          .prd {
+            width: 15%;
+          }
+          .dtl {
+            width: 50%;
+          }
+          .cnt {
+            width: 20%;
+          }
+          .prz {
+            width: 15%;
+          }
+        }
+        .products {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .prodContainer {
+            width: 100%;
+            .prodCard {
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              width: 100%;
+              h2 {
+                margin: 0;
+                font-size: 0.85em;
+                text-align: center;
+              }
+              img {
+                width: 15%;
+              }
+              .dtl {
+                width: 50%;
+              }
+              .cnt {
+                width: 20%;
+              }
+              .prz {
+                width: 15%;
+              }
+            }
+            .line {
+              width: 100%;
+              background-color: rgba(153, 0, 51, 0.3);
+              margin: 2% 0;
+              height: 1px;
+            }
+          }
+        }
+        .total {
+          display: flex;
+          width: 80%;
+          justify-content: flex-end;
+          h3 {
+            font-size: 0.9em;
+            margin: 0;
+            text-align: center;
+          }
+          .ttl {
+            margin-left: 50%;
+            width: 15%;
+          }
+          .qtt {
+            width: 20%;
+          }
+          .ptt {
+            width: 15%;
+          }
+        }
+      }
+      button {
+        background-color: #990033;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-top: 5vh;
+        color: white;
+        padding: 2%;
+      }
+    }
+    .pedidoDos {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin: 5vh 0 5vh 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 75%;
+        input {
+          width: 100%;
+          border-radius: 7px;
+          border: 1px solid rgb(177, 177, 177);
+          margin: 2% 0;
+          height: 5vh;
+        }
+      }
+      button {
+        background-color: #990033;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-top: 5vh;
+        color: white;
+        padding: 2%;
+      }
+    }
+    .pedidoTres {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 25%;
+        margin: 10vh 0 5vh 0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 5%;
+      }
+      h4 {
+        width: 65%;
+        font-size: 0.9em;
+        text-align: center;
+      }
+    }
+  }
 }
