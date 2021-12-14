@@ -344,6 +344,7 @@
 }
 
 .App main .productSection .prodContainer .smallProducts {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];
@@ -353,6 +354,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: scroll;
+  height: 60vh;
 }
 
 .App main .productSection .prodContainer .smallProducts .smallProdCard {
@@ -367,7 +370,7 @@
 }
 
 .App main .productSection .prodContainer .smallProducts .smallProdCard img {
-  height: 7.5vh;
+  height: 15vh;
 }
 
 .App main .productSection .quantity {
@@ -380,14 +383,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 100%;
   height: 5vh;
   margin-top: -5%;
 }
 
 .App main .productSection .quantity .actionButtons {
-  width: 40%;
-  margin-right: 7.5%;
+  width: 22.5%;
+  margin: 0 5% 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,15 +417,33 @@
 }
 
 .App main .productSection .quantity .price {
-  width: 25%;
+  width: 12.5%;
   text-align: center;
   border: 0.1px solid silver;
   border-radius: 6px;
-  padding: 1% 3.5%;
+  padding: 1% 3.5% 1% 1.5%;
+  margin-right: 5%;
+}
+
+.App main .productSection .quantity .arrow {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App main .productSection .quantity .arrow img {
+  width: 20%;
 }
 
 .App main .productSection .sendButtons {
-  width: 100%;
+  width: 50%;
   height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +457,8 @@
 .App main .productSection .sendButtons button {
   border: 0.1px solid silver;
   border-radius: 6px;
+  font-size: 0.85em;
+  height: 70%;
 }
 
 .App .fixed {

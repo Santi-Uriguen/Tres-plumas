@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProdCard from "./components/ProdCard";
 import SmallProdCard from "./components/SmallProdCard.jsx";
 import imagenes from "../../../../context/images";
+import arrow from "../../../../assets/ArrowDwn.png";
 
 const ProductSection = (props) => {
   const [prod, setProd] = useState(props.productos[1]);
@@ -80,9 +81,12 @@ const ProductSection = (props) => {
           <button onClick={() => handleClick("add")}>+</button>
         </div>
         <div className="price">{"$" + number * price}</div>
+        <div className="arrow">
+          <img src={arrow} alt="arrow down" />
+        </div>
       </div>
       <div className="sendButtons">
-        <button onClick={handleSubmit}>Agregar a la orden</button>
+        <button onClick={handleSubmit}>Agregar al pedido</button>
         <button onClick={handleSubmit}>Ver mi pedido</button>
       </div>
     </section>
