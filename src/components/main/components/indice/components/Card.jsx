@@ -6,7 +6,7 @@ function Card(props) {
   const imgSelection = () => {
     let ImgSrc;
     switch (props.class) {
-      case "alCafe":
+      case "al café":
         ImgSrc = imagenes[0];
         break;
       case "cremosos":

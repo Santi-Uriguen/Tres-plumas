@@ -7,8 +7,8 @@ const Indice = () => {
       <Card section="SECOS" class="secos" />
       <Card section="FRUTALES" class="frutales" />
       <Card section="CREMOSOS" class="cremosos" />
-      <Card section="AL CAFÉ" class="alCafe" />
-      <Card section="GOLDEN AGE" class="goldenAge" />
+      <Card section="AL CAFÉ" class="al café" />
+      <Card section="GOLDEN AGE" class="golden age" />
     </section>
   );
 };

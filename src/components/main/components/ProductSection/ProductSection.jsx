@@ -5,11 +5,11 @@ import imagenes from "../../../../context/images";
 import arrow from "../../../../assets/ArrowDwn.png";
 
 const ProductSection = (props) => {
-  const [prod, setProd] = useState(props.productos[1]);
+  const [prod, setProd] = useState(props.productos[0]);
   const imgSelection = () => {
     let ImgSrc;
     switch (props.name) {
-      case "cafe":
+      case "al café":
         ImgSrc = imagenes.banners[5];
         break;
       case "cremosos":
@@ -28,7 +28,6 @@ const ProductSection = (props) => {
     return ImgSrc;
   };
   const chooseBottle = (index) => {
-    console.log("entró con" + index);
     setProd(props.productos[index]);
   };
   const [number, newNumber] = useState(1);
@@ -60,7 +59,6 @@ const ProductSection = (props) => {
         />
         <div className="smallProducts">
           {props.productos.map((producto, index) => {
-            console.log(index);
             return (
               <SmallProdCard
                 src={producto.src}
@@ -81,9 +79,13 @@ const ProductSection = (props) => {
           <button onClick={() => handleClick("add")}>+</button>
         </div>
         <div className="price">{"$" + number * price}</div>
-        <div className="arrow">
-          <img src={arrow} alt="arrow down" />
-        </div>
+        {props.productos.length > 6 ? (
+          <div className="arrow">
+            <img src={arrow} alt="arrow down" />
+          </div>
+        ) : (
+          <div className="arrow" />
+        )}
       </div>
       <div className="sendButtons">
         <button onClick={handleSubmit}>Agregar al pedido</button>

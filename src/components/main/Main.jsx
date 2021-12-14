@@ -9,6 +9,9 @@ const Main = () => {
       <Indice />
       <ProductSection productos={products.frutales} name="frutales" />
       <ProductSection productos={products.cremosos} name="cremosos" />
+      <ProductSection productos={products.alCafe} name="al café" />
+      <ProductSection productos={products.secos} name="secos" />
+      <ProductSection productos={products.golden} name="golden age" />
     </main>
   );
 };
