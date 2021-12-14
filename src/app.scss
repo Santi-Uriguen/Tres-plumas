@@ -22,6 +22,7 @@
         font-style: italic;
         font-size: 30px;
         text-align: center;
+        font-family: "cymru_sans_bodyitalic";
       }
     }
     .navbar {
@@ -32,65 +33,66 @@
       z-index: 10;
       height: 10vh;
       background-color: #9c182f !important;
-      .navbar-brand {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        .navLogo {
-          width: 20%;
-        }
-      }
-      .navbar-toggler {
-        width: 15%;
-        height: 45%;
-        position: absolute;
-        right: 5%;
-        top: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffcc99;
-        span {
-          background-color: #ffcc99;
-          width: 100%;
-          height: 90%;
-        }
-      }
-      .collapsed {
-        position: absolute;
-        right: 5%;
-      }
-      .navbar-collapse {
-        background-color: #ffffff;
-        width: 100%;
-        margin: 0 -0.75rem;
-        .navbar-nav {
-          background-color: #ffffff;
+      .container {
+        .navbar-brand {
           display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 20%;
-          a {
-            background-color: #ffffff;
-            color: #990033;
-            text-align: center;
-            font-weight: bold;
-            font-size: larger;
-          }
-          .pedido {
-            color: black;
-          }
-          span {
-            width: 80%;
-            height: 1px;
-            opacity: 50%;
-            background-color: #9c182f;
+          justify-content: center;
+          margin: -5% auto;
+          .navLogo {
+            width: 35%;
           }
         }
-      }
-      .show {
-        height: 90vh;
+        .navbar-toggler {
+          width: 15%;
+          height: 45%;
+          position: absolute;
+          right: 5%;
+          top: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ffcc99;
+          span {
+            background-color: #ffcc99;
+            width: 90%;
+            height: 100%;
+          }
+        }
+        .collapsed {
+          position: absolute;
+          right: 5%;
+        }
+        .navbar-collapse {
+          background-color: #ffffff;
+          width: 100%;
+          margin: 0 -0.75rem;
+          .navbar-nav {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20%;
+            a {
+              background-color: #ffffff;
+              color: #990033;
+              text-align: center;
+              font-weight: bold;
+              font-size: larger;
+            }
+            .pedido {
+              color: black;
+            }
+            span {
+              width: 80%;
+              height: 1px;
+              opacity: 50%;
+              background-color: #9c182f;
+            }
+          }
+        }
+        .show {
+          height: 90vh;
+        }
       }
     }
     .fixed {
@@ -140,6 +142,8 @@
           align-items: center;
           display: flex;
           z-index: 1;
+          font-family: "pt_sans_narrowbold";
+          font-size: 3em;
         }
         img {
           background-color: black;
@@ -185,6 +189,8 @@
           display: flex;
           z-index: 1;
           color: white;
+          font-family: "pt_sans_narrowbold";
+          font-size: 3em;
         }
       }
       .prodContainer {
@@ -204,9 +210,11 @@
               text-align: center;
               h4 {
                 margin: 0;
+                font-family: "wales_sans_bodyregular";
               }
               p {
                 margin: 0;
+                font-family: "wales_sans_bodyregular";
               }
             }
             img {
@@ -253,11 +261,13 @@
             text-align: center;
             margin: 0 2%;
             padding: 0;
+            font-family: "wales_sans_bodyregular";
           }
           button {
             width: 25px;
             border: none;
             background-color: rgb(165, 163, 163);
+            font-family: "wales_sans_bodyregular";
           }
         }
         .price {
@@ -267,6 +277,7 @@
           border-radius: 6px;
           padding: 1% 3.5% 1% 1.5%;
           margin-right: 5%;
+          font-family: "wales_sans_bodyregular";
         }
         .arrow {
           width: 50%;
@@ -289,6 +300,7 @@
           border-radius: 6px;
           font-size: 0.85em;
           height: 70%;
+          font-family: "wales_sans_bodyregular";
         }
       }
     }

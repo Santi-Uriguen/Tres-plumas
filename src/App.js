@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import "./assets/fonts/cymru sans/stylesheet.css";
+import "./assets/fonts/PT sans/stylesheet.css";
+import "./assets/fonts/wales sans/stylesheet.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Store from "./components/store/Store";

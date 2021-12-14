@@ -34,6 +34,7 @@
   font-style: italic;
   font-size: 30px;
   text-align: center;
+  font-family: "cymru_sans_bodyitalic";
 }
 
 .App header .navbar {
@@ -48,22 +49,21 @@
   background-color: #9c182f !important;
 }
 
-.App header .navbar .navbar-brand {
+.App header .navbar .container .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  margin: 0 auto;
+  margin: -5% auto;
 }
 
-.App header .navbar .navbar-brand .navLogo {
-  width: 20%;
+.App header .navbar .container .navbar-brand .navLogo {
+  width: 35%;
 }
 
-.App header .navbar .navbar-toggler {
+.App header .navbar .container .navbar-toggler {
   width: 15%;
   height: 45%;
   position: absolute;
@@ -81,24 +81,24 @@
   background-color: #ffcc99;
 }
 
-.App header .navbar .navbar-toggler span {
+.App header .navbar .container .navbar-toggler span {
   background-color: #ffcc99;
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 100%;
 }
 
-.App header .navbar .collapsed {
+.App header .navbar .container .collapsed {
   position: absolute;
   right: 5%;
 }
 
-.App header .navbar .navbar-collapse {
+.App header .navbar .container .navbar-collapse {
   background-color: #ffffff;
   width: 100%;
   margin: 0 -0.75rem;
 }
 
-.App header .navbar .navbar-collapse .navbar-nav {
+.App header .navbar .container .navbar-collapse .navbar-nav {
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +113,7 @@
   margin-top: 20%;
 }
 
-.App header .navbar .navbar-collapse .navbar-nav a {
+.App header .navbar .container .navbar-collapse .navbar-nav a {
   background-color: #ffffff;
   color: #990033;
   text-align: center;
@@ -121,18 +121,18 @@
   font-size: larger;
 }
 
-.App header .navbar .navbar-collapse .navbar-nav .pedido {
+.App header .navbar .container .navbar-collapse .navbar-nav .pedido {
   color: black;
 }
 
-.App header .navbar .navbar-collapse .navbar-nav span {
+.App header .navbar .container .navbar-collapse .navbar-nav span {
   width: 80%;
   height: 1px;
   opacity: 50%;
   background-color: #9c182f;
 }
 
-.App header .navbar .show {
+.App header .navbar .container .show {
   height: 90vh;
 }
 
@@ -212,6 +212,8 @@
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  font-family: "pt_sans_narrowbold";
+  font-size: 3em;
 }
 
 .App main .indice .indexCard img {
@@ -291,6 +293,8 @@
   display: flex;
   z-index: 1;
   color: white;
+  font-family: "pt_sans_narrowbold";
+  font-size: 3em;
 }
 
 .App main .productSection .prodContainer {
@@ -333,10 +337,12 @@
 
 .App main .productSection .prodContainer .bigProd .producto article h4 {
   margin: 0;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection .prodContainer .bigProd .producto article p {
   margin: 0;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection .prodContainer .bigProd .producto img {
@@ -408,12 +414,14 @@
   text-align: center;
   margin: 0 2%;
   padding: 0;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection .quantity .actionButtons button {
   width: 25px;
   border: none;
   background-color: #a5a3a3;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection .quantity .price {
@@ -423,6 +431,7 @@
   border-radius: 6px;
   padding: 1% 3.5% 1% 1.5%;
   margin-right: 5%;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection .quantity .arrow {
@@ -459,6 +468,7 @@
   border-radius: 6px;
   font-size: 0.85em;
   height: 70%;
+  font-family: "wales_sans_bodyregular";
 }
 
 .App main .productSection:last-of-type .prodContainer .bigProd .producto img {
