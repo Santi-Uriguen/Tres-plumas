@@ -14,7 +14,9 @@ function NavBar(props) {
     console.log(window.localStorage);
     window.localStorage.getItem("pedido") !== null && setstate(false);
   }, []);
-  const goHome = () => {};
+  const goHome = () => {
+    props.changePage("home");
+  };
   return (
     <Navbar bg="light" expand="lg" id="navBar">
       <Container>
@@ -34,12 +36,7 @@ function NavBar(props) {
             <span></span>
             <Nav.Link href="#golden">GOLDEN AGE</Nav.Link>
             <span></span>
-            <Nav.Link
-              href="#link"
-              className="pedido"
-              onClick={changePage}
-              disabled={state}
-            >
+            <Nav.Link href="#link" className="pedido" onClick={changePage}>
               MI PEDIDO
             </Nav.Link>
           </Nav>
