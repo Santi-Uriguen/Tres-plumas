@@ -52,11 +52,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -5% auto;
+  margin: -4% auto;
 }
 
 .App header .navbar .container .navbar-brand .navLogo {
-  width: 35%;
+  width: 40%;
 }
 
 .App header .navbar .container .navbar-toggler {
