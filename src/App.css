@@ -189,6 +189,7 @@
           align-items: center;
   background-color: black;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -303,37 +304,21 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 70vh;
 }
 
 .App main .productSection .prodContainer .bigProd {
   width: 100%;
 }
 
-.App main .productSection .prodContainer .bigProd .quantity {
+.App main .productSection .prodContainer .bigProd .producto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 50%;
-}
-
-.App main .productSection .prodContainer .bigProd .quantity .actionButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.App main .productSection .prodContainer .smallProducts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -342,8 +327,115 @@
           align-items: center;
 }
 
+.App main .productSection .prodContainer .bigProd .producto article {
+  text-align: center;
+}
+
+.App main .productSection .prodContainer .bigProd .producto article h4 {
+  margin: 0;
+}
+
+.App main .productSection .prodContainer .bigProd .producto article p {
+  margin: 0;
+}
+
+.App main .productSection .prodContainer .bigProd .producto img {
+  width: 60%;
+}
+
+.App main .productSection .prodContainer .smallProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App main .productSection .prodContainer .smallProducts .smallProdCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0;
+}
+
 .App main .productSection .prodContainer .smallProducts .smallProdCard img {
+  height: 7.5vh;
+}
+
+.App main .productSection .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 5vh;
+  margin-top: -5%;
+}
+
+.App main .productSection .quantity .actionButtons {
+  width: 40%;
+  margin-right: 7.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.1px solid silver;
+  border-radius: 6px;
+}
+
+.App main .productSection .quantity .actionButtons h4 {
+  text-align: center;
+  margin: 0 2%;
+  padding: 0;
+}
+
+.App main .productSection .quantity .actionButtons button {
+  width: 25px;
+  border: none;
+  background-color: #a5a3a3;
+}
+
+.App main .productSection .quantity .price {
   width: 25%;
+  text-align: center;
+  border: 0.1px solid silver;
+  border-radius: 6px;
+  padding: 1% 3.5%;
+}
+
+.App main .productSection .sendButtons {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.App main .productSection .sendButtons button {
+  border: 0.1px solid silver;
+  border-radius: 6px;
 }
 
 .App .fixed {

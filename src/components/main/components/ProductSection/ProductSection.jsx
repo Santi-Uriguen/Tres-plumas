@@ -26,6 +26,22 @@ const ProductSection = (props) => {
     }
     return ImgSrc;
   };
+  const chooseBottle = (index) => {
+    console.log("entró con" + index);
+    setProd(props.productos[index]);
+  };
+  const [number, newNumber] = useState(1);
+  const price = 1800;
+  const handleClick = (p) => {
+    if (number > 1) {
+      p === "rest" ? newNumber(number - 1, {}) : newNumber(number + 1, {});
+    } else {
+      p === "rest" ? newNumber(1) : newNumber(number + 1);
+    }
+  };
+  const handleSubmit = () => {
+    newNumber(1);
+  };
   return (
     <section className={"productSection"} id={props.name}>
       <div className="banner">
@@ -42,10 +58,32 @@ const ProductSection = (props) => {
           img={prod.src}
         />
         <div className="smallProducts">
-          {props.productos.map((producto) => {
-            return <SmallProdCard src={producto.src} key={producto.serial} />;
+          {props.productos.map((producto, index) => {
+            console.log(index);
+            return (
+              <SmallProdCard
+                src={producto.src}
+                key={producto.serial}
+                index={index}
+                choose={chooseBottle}
+              />
+            );
           })}
         </div>
+      </div>
+      <div className="quantity">
+        <div className="actionButtons">
+          <button onClick={() => handleClick("rest")} id="restButton">
+            -
+          </button>
+          <h4>{number}</h4>
+          <button onClick={() => handleClick("add")}>+</button>
+        </div>
+        <div className="price">{"$" + number * price}</div>
+      </div>
+      <div className="sendButtons">
+        <button onClick={handleSubmit}>Agregar a la orden</button>
+        <button onClick={handleSubmit}>Ver mi pedido</button>
       </div>
     </section>
   );
